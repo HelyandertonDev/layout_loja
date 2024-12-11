@@ -1,0 +1,89 @@
+/* Customizações para o portfólio */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn_{
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn_:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+    
+}
+
+/* Remover o sublinhado do link */
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none; /* Garantir que não tenha sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .portfolio-item img {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+}
